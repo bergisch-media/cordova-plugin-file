@@ -353,7 +353,7 @@ function copyFolder (src, dst, name) {
                         complete();
                         return;
                     }
-                    copyFolder(the.folders[todo], dst)
+                    copyFolder(the.folders[todo], the.fld)
                     .done(function () { copyfolders(); }, failed);
                 };
                 var copyfiles = function () {
